@@ -19,6 +19,7 @@ export default merge(common, {
   // https://webpack.js.org/guides/development/
   devServer: {
     static: './dist',
+    port: 3000,
   },
   optimization: {
     runtimeChunk: 'single',

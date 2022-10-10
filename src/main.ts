@@ -1,3 +1,5 @@
+import "./styles/style.scss";
+
 enum Test {
   ONE = 'one',
   TWO = 'two',
