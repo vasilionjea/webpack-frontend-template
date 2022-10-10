@@ -7,9 +7,20 @@ const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 export default merge(common, {
   mode: 'development',
+
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
+
   devtool: 'inline-source-map',
+
+  // https://webpack.js.org/guides/development/
+  devServer: {
+    static: './dist',
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
 });

@@ -7,7 +7,7 @@ class App {
   constructor() {}
 
   public start() {
-    console.log('It works!', Test.ONE);
+    console.log('It works!', Test.ONE, Test.TWO);
   }
 }
 
