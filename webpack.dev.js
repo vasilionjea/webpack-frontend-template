@@ -20,6 +20,7 @@ export default merge(common, {
   devServer: {
     static: './dist',
     port: 3000,
+    watchFiles: ['src/*.html'],
   },
   optimization: {
     runtimeChunk: 'single',
