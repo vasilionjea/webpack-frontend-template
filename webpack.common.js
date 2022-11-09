@@ -19,6 +19,8 @@ export default {
       },
 
       // https://webpack.js.org/guides/asset-modules
+      // All images will be emitted into the assets folder
+      // within the output directory.
       {
         test: /\.(png|svg|jpg|jpeg)$/i,
         type: 'asset/resource',
@@ -49,6 +51,6 @@ export default {
       template: 'src/index.html',
       favicon: 'src/favicon.ico',
       inject: 'body',
-    })
+    }),
   ],
 };

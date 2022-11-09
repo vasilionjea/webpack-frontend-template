@@ -14,7 +14,7 @@ export default merge(common, {
     clean: true,
   },
 
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-source-map',
 
   // https://webpack.js.org/guides/development/
   devServer: {
