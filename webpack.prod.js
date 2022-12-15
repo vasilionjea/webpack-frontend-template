@@ -1,10 +1,11 @@
 import path from 'path';
-import url from 'url';
 import {merge} from 'webpack-merge';
-import common from './webpack.common.js';
+import common, {__dirname} from './webpack.common.js';
 
-const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-
+/**
+ * Webpack config for production.
+ * https://webpack.js.org/guides/production
+ */
 export default merge(common, {
   mode: 'production',
   output: {

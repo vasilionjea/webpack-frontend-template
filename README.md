@@ -1,10 +1,15 @@
-# Repo to relearn various subjects
+# About
+A vanilla starter template for Browser JavaScript projects using Typescript and Sass.
 
-## Webpack
-<https://webpack.js.org/guides/getting-started/>
+## Development 
+Run `npm run start` to start the Webpack development server with live reload.
 
-Install: `npm install webpack webpack-cli --save-dev`
+## Production
+1. Run `npm run build` to build project.
+2. Then deploy the generated `dist/` directory.
 
-## Typescript 
+## Resources 
+* <https://webpack.js.org/guides/getting-started>
+* <https://webpack.js.org/configuration>
 * <https://www.typescriptlang.org/tsconfig>
 * <https://webpack.js.org/guides/typescript>

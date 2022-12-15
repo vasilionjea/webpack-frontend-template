@@ -1,26 +1,46 @@
+import path from 'path';
+import url from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
+export const isProd = process.env.NODE_ENV === 'production';
+export const isDev = !isProd;
+export const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
+/**
+ * This common Webpack config is used for both production and development.
+ * https://webpack.js.org/configuration
+ */
 export default {
+  // The environment in which the code will run
+  target: 'web',
+
+  // Tells webpack to use its built-in optimizations accordingly
   mode: 'none',
+
+  // The entry file(s) from where Webpack will start resolving modules
   entry: {
     app: './src/main.ts',
   },
+
   module: {
     rules: [
+      // Typescript
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
 
+      // HTML
       {
         test: /\.html$/,
         loader: 'html-loader'
       },
 
+
+      // Images will be emitted into the assets folder within the output directory
       // https://webpack.js.org/guides/asset-modules
-      // All images will be emitted into the assets folder
-      // within the output directory.
       {
         test: /\.(png|svg|jpg|jpeg)$/i,
         type: 'asset/resource',
@@ -29,23 +49,32 @@ export default {
         }
       },
 
+      // CSS
       {
         test: /\.scss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
+          MiniCssExtractPlugin.loader,
+
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
+
           // Compiles Sass to CSS
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ],
   },
+
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
+
   plugins: [
+    // Extract CSS source into its own file
+    new MiniCssExtractPlugin({
+      filename: isDev ? '[name].css' : '[name].[contenthash].css',
+    }),
+
     new HtmlWebpackPlugin({
       hash: true,
       template: 'src/index.html',

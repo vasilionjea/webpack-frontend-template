@@ -1,10 +1,11 @@
 import path from 'path';
-import url from 'url';
 import {merge} from 'webpack-merge';
-import common from './webpack.common.js';
+import common, {__dirname} from './webpack.common.js';
 
-const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-
+/**
+ * Webpack config for development.
+ * https://webpack.js.org/guides/development
+ */
 export default merge(common, {
   mode: 'development',
 
@@ -16,12 +17,13 @@ export default merge(common, {
 
   devtool: 'cheap-module-source-map',
 
-  // https://webpack.js.org/guides/development/
+  // Web server with live reload
   devServer: {
     static: './dist',
     port: 3000,
     watchFiles: ['src/*.html'],
   },
+
   optimization: {
     runtimeChunk: 'single',
   },
