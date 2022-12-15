@@ -9,8 +9,8 @@ ES2017 was a tiny release compared to ES6 (_ES2015_) and introduced `async/await
 #### Sass
 Transforms Sass to CSS.
 
-#### ESLint & Prettier. 
-ESLint relies on your `.eslintrc.cjs` config to lint _.ts_ files, and uses the recommended rules. Prettier - formats your code.
+#### ESLint & Prettier
+ESLint relies on your `.eslintrc.cjs` config to lint _.ts_ files, and uses the recommended rules. Prettier formats your code and relies on its defaults and the `.prettierrc` file.
 
 ## Development 
 * Run `npm run start` to start the Webpack development server with live reload. Also opens your Browser and points it to http://localhost:3000
