@@ -4,7 +4,6 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export const isProd = process.env.NODE_ENV === 'production';
-export const isDev = !isProd;
 export const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 /**
@@ -72,7 +71,7 @@ export default {
   plugins: [
     // Extract CSS source into its own file
     new MiniCssExtractPlugin({
-      filename: isDev ? '[name].css' : '[name].[contenthash].css',
+      filename: isProd ? '[name].[contenthash].css' : '[name].css',
     }),
 
     new HtmlWebpackPlugin({

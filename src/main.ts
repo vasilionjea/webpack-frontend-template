@@ -1,15 +1,13 @@
-import "./styles/style.scss";
+import './styles/style.scss';
 
 enum Test {
-  ONE = 'one',
-  TWO = 'two',
+  One = 'one',
+  Two = 'two',
 }
 
 class App {
-  constructor() {}
-
   public start() {
-    console.log('It works!', Test.ONE, Test.TWO);
+    console.log('It works!', Test.One, Test.Two);
   }
 }
 
