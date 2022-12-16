@@ -48,7 +48,7 @@ Jest is a JavaScript Testing Framework and works with Typescript. Tests are writ
 * https://prettier.io/docs/en/options.html
 * https://blog.logrocket.com/linting-typescript-using-eslint-and-prettier
 
-#### 
+#### Jest
 * https://jestjs.io/docs/getting-started
 * https://jestjs.io/docs/getting-started#using-typescript
 
