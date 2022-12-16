@@ -1,7 +1,7 @@
 import { beforeEach, expect, test } from '@jest/globals';
 import App from '../src/app';
 
-let app;
+let app: App;
 
 beforeEach(() => {
   app = new App();

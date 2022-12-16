@@ -12,6 +12,9 @@ Transforms Sass to CSS.
 #### ESLint & Prettier
 ESLint relies on your `.eslintrc.cjs` config to lint _.ts_ files, and uses the recommended rules. Prettier formats your code and relies on its defaults and the `.prettierrc` file.
 
+#### Jest
+Jest is a JavaScript Testing Framework and works with Typescript. Tests are written under the `test` directory.
+
 ## Development 
 * Run `npm run start` to start the Webpack development server with live reload. Also opens your Browser and points it to http://localhost:3000
 * Run `npm run lint` to lint your code with ESLint.
@@ -43,4 +46,8 @@ ESLint relies on your `.eslintrc.cjs` config to lint _.ts_ files, and uses the r
 * https://prettier.io/docs/en/index.html
 * https://prettier.io/docs/en/options.html
 * https://blog.logrocket.com/linting-typescript-using-eslint-and-prettier
+
+#### 
+* https://jestjs.io/docs/getting-started
+* https://jestjs.io/docs/getting-started#using-typescript
 
