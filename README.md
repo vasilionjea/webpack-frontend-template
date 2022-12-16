@@ -16,9 +16,10 @@ ESLint relies on your `.eslintrc.cjs` config to lint _.ts_ files, and uses the r
 Jest is a JavaScript Testing Framework and works with Typescript. Tests are written under the `test` directory.
 
 ## Development 
-* Run `npm run start` to start the Webpack development server with live reload. Also opens your Browser and points it to http://localhost:3000
-* Run `npm run lint` to lint your code with ESLint.
-* Run `npm run format` to format your code with Prettier.
+* `npm run start` to start the Webpack development server with live reload. Also opens your Browser and points it to http://localhost:3000
+* `npm run lint` to lint your code with ESLint.
+* `npm run format` to format your code with Prettier.
+* `npm run test` to run tests in watch mode, or `npm run test:ci` to run tests once.
 
 ## Production
 1. Run `npm run build` to build project.
