@@ -3,3 +3,5 @@ dist/**
 **/*.d.ts
 .eslintrc.cjs
 webpack*.js
+jest.config.cjs
+.github
