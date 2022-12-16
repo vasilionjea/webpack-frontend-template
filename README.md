@@ -1,6 +1,6 @@
+# About
 [![Build Status](https://github.com/vasilionjea/webpack-frontend-template/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/vasilionjea/webpack-frontend-template/actions/workflows/unit-tests.yml)
 
-# About
 A webpack starter template for Frontend JavaScript projects using the following technologies:
 
 #### Typescript
