@@ -37,7 +37,6 @@ export default {
         loader: 'html-loader'
       },
 
-
       // Images will be emitted into the assets folder within the output directory
       // https://webpack.js.org/guides/asset-modules
       {
