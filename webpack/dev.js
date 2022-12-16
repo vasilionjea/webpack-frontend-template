@@ -1,17 +1,13 @@
-import path from 'path';
-import { merge } from 'webpack-merge';
-import common, { __dirname } from './webpack.common.js';
-
 /**
- * Webpack config for development.
+ * Development webpack config.
  * https://webpack.js.org/guides/development
  */
-export default merge(common, {
+export default ({ distFolderPath, devServerPort }) => ({
   mode: 'development',
 
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: distFolderPath,
     clean: true,
   },
 
@@ -19,8 +15,8 @@ export default merge(common, {
 
   // Web server with live reload
   devServer: {
-    static: './dist',
-    port: 3000,
+    static: distFolderPath,
+    port: devServerPort,
     watchFiles: ['src/*.html'],
   },
 

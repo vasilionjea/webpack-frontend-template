@@ -5,14 +5,14 @@
   "private": true,
   "description": "A starter template for Frontend projects using Typescript & Sass",
   "scripts": {
-    "start": "webpack serve --config webpack.dev.js --open",
+    "start": "webpack serve --env dev --open",
     "format": "prettier --ignore-path .eslintignore --write \"**/*.+(js|ts)\"",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ./src",
     "test": "jest --watch",
     "test:ci": "jest --forceExit",
     "preversion": "npm-run-all format lint",
     "postversion": "git push && git push --tags",
-    "prod": "webpack --config webpack.prod.js",
+    "prod": "webpack --env prod",
     "build": "npm-run-all format lint prod"
   },
   "keywords": [],

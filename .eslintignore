@@ -2,6 +2,7 @@
 dist/**
 **/*.d.ts
 .eslintrc.cjs
+webpack/**
 webpack*.js
 jest.config.cjs
 .github

@@ -1,16 +1,13 @@
-import path from 'path';
-import url from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-export const isProd = process.env.NODE_ENV === 'production';
-export const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
-
 /**
- * This common Webpack config is used for both production and development.
+ * This is the base webpack config and not meant to be used by itself. It's
+ * merged into the production and development configs.
+ *
  * https://webpack.js.org/configuration
  */
-export default {
+export default ({ isProd }) => ({
   // The environment in which the code will run
   target: 'web',
 
@@ -34,7 +31,7 @@ export default {
       // HTML
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
       },
 
       // Images will be emitted into the assets folder within the output directory
@@ -43,8 +40,8 @@ export default {
         test: /\.(png|svg|jpg|jpeg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'assets/[hash][ext][query]'
-        }
+          filename: 'assets/[hash][ext][query]',
+        },
       },
 
       // CSS
@@ -80,4 +77,4 @@ export default {
       inject: 'body',
     }),
   ],
-};
+});
