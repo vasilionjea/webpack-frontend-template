@@ -6,9 +6,8 @@
     "allowJs": true,
     "rootDir": "./src",
     "composite": true,
-    "outDir": ".tmp/tsc",
-    "emitDeclarationOnly": false,
-    "types": [],
+    "declaration": true,
+    "declarationDir": ".tmp/types",
     "noImplicitAny": true,
     "removeComments": true,
     "sourceMap": true

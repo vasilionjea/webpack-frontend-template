@@ -13,8 +13,9 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
 
-  globals: {
-    'ts-jest': true,
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    sourceType: 'module',
   },
 
   // Project-specific rules
@@ -30,6 +31,7 @@ module.exports = {
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: ['./tsconfig.json'],
+        sourceType: 'module',
       },
       extends: [
         'plugin:@typescript-eslint/recommended-requiring-type-checking'
@@ -39,7 +41,8 @@ module.exports = {
       files: ['test/**/*.ts'],
       parserOptions: {
         tsconfigRootDir: __dirname,
-        project: ['./test/tsconfig.json']
+        project: ['./test/tsconfig.json'],
+        sourceType: 'module',
       },
     },
   ],

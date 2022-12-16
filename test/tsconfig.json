@@ -4,10 +4,10 @@
     "moduleResolution": "node",
     "rootDir": ".",
     "types": [
-      "jest"
+      "jest",
+      "node"
     ],
-    "noEmit": true,
-    "skipLibCheck": true
+    "noEmit": true
   },
   "include": [
     "."
