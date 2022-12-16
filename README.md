@@ -4,9 +4,9 @@
 A webpack starter template for Frontend JavaScript projects using the following technologies:
 
 #### Typescript
-Webpack's `ts-loader` uses `tsc`, the TypeScript compiler, and relies on your `tsconfig.json` configuration, to compile _.ts_ files to **es2017** JavaScript. ECMAScript 2017 (_ES2017 or ES8_) of the ECMA-262 Standard was finalized in June 2017. 
+Webpack's `ts-loader` uses `tsc`, the TypeScript compiler, and relies on your `tsconfig.json` configuration, to compile _.ts_ files to **es2017**. ECMAScript 2017 (_ES2017 or ES8_) of the ECMA-262 Standard was finalized in June 2017. 
 
-ES2017 was a tiny release compared to ES6 (_ES2015_) and introduced `async/await`, `Object.values()`, `Object.entries()` among a few other featuers, hence these features will not be transpiled. Change the `target` option in the `tsconfig.json` file to a lower version of JavaScript if you won't to support old Browser versions.
+ES2017 was a tiny release compared to ES6 (_ES2015_) and introduced `async/await`, `Object.values()`, `Object.entries()` among a few other featuers, hence these features will not be transpiled. Change the `target` option in the `tsconfig.json` file to a lower version of JavaScript if you won't to support old Browsers.
 
 #### Sass
 Transforms Sass to CSS.
