@@ -1,5 +1,5 @@
 # About
-A starter template for Frontend JavaScript projects using the following technologies:
+A webpack starter template for Frontend JavaScript projects using the following technologies:
 
 #### Typescript
 Webpack's `ts-loader` uses `tsc`, the TypeScript compiler, and relies on your `tsconfig.json` configuration, to compile _.ts_ files to **es2017** JavaScript. ECMAScript 2017 (_ES2017 or ES8_) of the ECMA-262 Standard was finalized in June 2017. 
