@@ -26,7 +26,7 @@ const settings = {
 /**
  * The main webpack config. It merges the base config with an
  * environment specific one and returns it to webpack. Run it
- * from the CLI or NPM script via the the `--env` arg:
+ * from the CLI or NPM script via the `--env` arg:
  *
  * Development: `webpack --env dev`
  *  Production: `webpack --env prod`
