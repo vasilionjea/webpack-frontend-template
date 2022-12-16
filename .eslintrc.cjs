@@ -1,12 +1,21 @@
 // https://eslint.org/docs/latest/user-guide/configuring/configuration-files
 module.exports = {
   root: true,
+  env: {
+    browser: true,
+    node: true,
+    jest: true,
+  },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
+
+  globals: {
+    'ts-jest': true,
+  },
 
   // Project-specific rules
   rules: {
@@ -18,7 +27,6 @@ module.exports = {
   overrides: [
     {
       files: ['src/**/*.ts'],
-      env: { browser: true },
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: ['./tsconfig.json'],
@@ -29,7 +37,6 @@ module.exports = {
     },
     {
       files: ['test/**/*.ts'],
-      env: { node: true },
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: ['./test/tsconfig.json']
