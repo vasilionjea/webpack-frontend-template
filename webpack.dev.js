@@ -1,6 +1,6 @@
 import path from 'path';
-import {merge} from 'webpack-merge';
-import common, {__dirname} from './webpack.common.js';
+import { merge } from 'webpack-merge';
+import common, { __dirname } from './webpack.common.js';
 
 /**
  * Webpack config for development.

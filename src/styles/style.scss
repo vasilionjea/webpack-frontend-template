@@ -12,7 +12,9 @@ body {
 }
 
 
-.pull-left { float: left; }
+.pull-left {
+  float: left;
+}
 
 .icon {
   width: 38px;
@@ -40,7 +42,10 @@ main {
 }
 
 header {
-  span { margin-top: 4px; }
+  span {
+    margin-top: 4px;
+  }
+
   h1 {
     margin: 0;
     margin-left: 48px;
