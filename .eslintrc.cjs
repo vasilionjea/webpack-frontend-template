@@ -1,7 +1,9 @@
 // https://eslint.org/docs/latest/user-guide/configuring/configuration-files
+// https://json.schemastore.org/eslintrc
 module.exports = {
   root: true,
   env: {
+    es6: true,
     browser: true,
     node: true,
     jest: true,

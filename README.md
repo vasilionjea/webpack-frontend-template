@@ -40,6 +40,7 @@ Jest is a JavaScript Testing Framework and works with Typescript. Tests are writ
 
 #### ESLint
 * https://typescript-eslint.io/getting-started
+* https://json.schemastore.org/eslintrc
 * https://eslint.org/docs/latest/user-guide/configuring/configuration-files
 * https://eslint.org/docs/latest/user-guide/configuring/rules#rules-from-plugins
 * https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
