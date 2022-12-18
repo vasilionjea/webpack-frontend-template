@@ -6,3 +6,5 @@ webpack/**
 webpack*.js
 jest.config.cjs
 .github
+.tmp
+*.d.ts
