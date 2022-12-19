@@ -5,14 +5,10 @@ import baseConfig from './webpack/base.js';
 import devConfig from './webpack/dev.js';
 import prodConfig from './webpack/prod.js';
 
-// Project settings
-const settings = {
+// Project default settings
+const defaults = {
   distFolderName: 'dist',
   devServerPort: 3000,
-
-  get isProd() {
-    return process.env.NODE_ENV === 'production';
-  },
 
   get __dirname() {
     return path.dirname(url.fileURLToPath(import.meta.url));
@@ -32,6 +28,7 @@ const settings = {
  *  Production: `webpack --env prod`
  */
 export default (mode) => {
+  const settings = { isProdMode: mode.prod, ...defaults };
   const base = baseConfig(settings);
 
   if (mode.dev) {

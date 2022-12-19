@@ -7,7 +7,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
  *
  * https://webpack.js.org/configuration
  */
-export default ({ isProd }) => ({
+export default ({ isProdMode }) => ({
   // The environment in which the code will run
   target: 'web',
 
@@ -67,7 +67,7 @@ export default ({ isProd }) => ({
   plugins: [
     // Extract CSS source into its own file
     new MiniCssExtractPlugin({
-      filename: isProd ? '[name].[contenthash].css' : '[name].css',
+      filename: isProdMode ? '[name]-[contenthash].css' : '[name].css',
     }),
 
     new HtmlWebpackPlugin({
