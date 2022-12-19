@@ -71,7 +71,6 @@ export default ({ isProdMode }) => ({
     }),
 
     new HtmlWebpackPlugin({
-      hash: true,
       template: 'src/index.html',
       favicon: 'src/favicon.ico',
       inject: 'body',
