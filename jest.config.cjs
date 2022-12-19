@@ -10,4 +10,10 @@ module.exports = {
     'src',
   ],
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
+  resetMocks: true,
+
+  // https://jestjs.io/docs/configuration#globals-object
+  globals: {
+    SOME_FEATURE_FLAG: true,
+  },
 };
