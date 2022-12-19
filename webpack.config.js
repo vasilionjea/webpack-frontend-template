@@ -7,7 +7,6 @@ import prodConfig from './webpack/prod.js';
 
 // Project default settings
 const defaults = {
-  distFolderName: 'dist',
   devServerPort: 3000,
 
   get __dirname() {
@@ -15,7 +14,7 @@ const defaults = {
   },
 
   get distFolderPath() {
-    return path.resolve(this.__dirname, this.distFolderName);
+    return path.resolve(this.__dirname, 'dist');
   },
 };
 
