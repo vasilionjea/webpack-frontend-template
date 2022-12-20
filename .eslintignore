@@ -1,10 +1,19 @@
-**/node_modules/**
-dist/**
+# type definitions
+*.d.ts
 **/*.d.ts
-.eslintrc.cjs
+
+# compiled output
+dist/**
+tmp
+.tmp
+
+# dependencies
+**/node_modules/**
+
+# build configs
 webpack/**
 webpack*.js
+
+# tooling configs
+.eslintrc.cjs
 jest.config.cjs
-.github
-.tmp
-*.d.ts
