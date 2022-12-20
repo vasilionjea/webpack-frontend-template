@@ -14,7 +14,7 @@
     "."
   ],
   "files": [
-    "../src/types.d.ts"
+    "../src/globals.d.ts"
   ],
   "references": [
     {
