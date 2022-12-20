@@ -8,12 +8,12 @@ beforeEach(() => {
   app.start();
 });
 
-test('it adds numbers', () => {
-  const value = 2 + 2;
-  expect(value).toBeGreaterThan(3);
+test('it starts app', () => {
+  const value = true;
+  expect(value).toBe(true);
 });
 
-test('it contains string', () => {
-  const value = 'hello';
-  expect(value).toContain('he');
+test('it contains greeting', () => {
+  const value = 'hello world';
+  expect(value).toContain('hello');
 });
