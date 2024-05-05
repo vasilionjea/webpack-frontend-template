@@ -21,7 +21,7 @@ Jest is a JavaScript Testing Framework and works with Typescript. Tests are writ
 You must have NodeJS already installed on your machine, then run `npm install` before running any other commands.
 
 ### Development 
-* `npm run start` to start the webpack development server with live reload. Opens your browser & points it at http://localhost:3000
+* `npm run start` to start the webpack development server with live reload. Opens your browser at http://localhost:3000
 * `npm run lint` to lint your code with ESLint.
 * `npm run format` to format your code with Prettier.
 * `npm run test` to run tests in watch mode, or `npm run test:ci` to run tests once.
